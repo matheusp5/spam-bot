@@ -12,7 +12,7 @@ namespace EuTeAmoBot
         {
             while (true)
             {
-
+                Console.Clear();
                 InputSimulator sim = new InputSimulator();
                 Console.WriteLine("Qual mensagem você deseja enviar?");
                 string mensage = Console.ReadLine();
