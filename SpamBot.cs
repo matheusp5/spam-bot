@@ -20,7 +20,7 @@ namespace EuTeAmoBot
                 int quantity = int.Parse(Console.ReadLine());
                 Console.WriteLine("Tudo pronto? [Y/N]");
                 string respond = Console.ReadLine();
-                if (respond.Equals("Y"))
+                if (respond.toLower().Equals("y"))
                 {
                     sim.Keyboard.Sleep(5000);
                     int l;
@@ -33,7 +33,7 @@ namespace EuTeAmoBot
                         sim.Keyboard.KeyPress(new VirtualKeyCode[] { VirtualKeyCode.RETURN });
                     }
                 }
-                else if (respond.Equals("N"))
+                else if (respond.toLower().Equals("n"))
                 {
                     Console.WriteLine("Ok...");
                 }
